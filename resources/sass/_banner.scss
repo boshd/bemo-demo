@@ -1,0 +1,124 @@
+.banner-container {
+    width: 100%;
+    height: 750px;
+    // background-color: red;
+    position: relative;
+
+    // background: rgb(2,0,36);
+    background: linear-gradient(#FF6600, white);
+
+    img {
+        margin: 0;
+        position: absolute;
+        top: 45%;
+        left: 70%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        // background-color: green;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .banner-inner {
+        margin: 0 auto;
+        width: 60%;
+        height: 60%;
+        // padding-top: 200px;
+        margin: 0;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+
+        // background-color: red;
+
+        .banner-left-box {
+            width: 40%;
+            float: left;
+
+            background-color: transparent;
+
+            h1 {
+                font-size: 80px;
+                font-family: $pffont;
+                line-height: 1em !important;
+                color: rgb(33,48,50);
+            }
+
+            h4 {
+                font-size: 25px;
+                line-height: 1.3em !important;
+                font-weight: 400;
+
+            }
+        }
+
+        .banner-right-box {
+            width: 60%;
+            float: right;
+            margin-right: 40px;
+
+            background-color: transparent;
+
+            height:90%;
+            // overflow:hidden;
+            img {
+
+                max-width: 100%;
+                height: inherit;
+                width: inherit;
+                // max-height:100px;
+                overflow:hidden;
+                // height: 100%;
+                // display: block;
+            }
+        }
+
+
+        @media only screen and (max-width: 768px) {
+            padding-top: 100px;
+            max-width: 90%;
+
+            .banner-left-box {
+                width: 100%;
+
+                h1 {
+                    font-size: 35px;
+                    /** Line Spacing **/
+                    line-height: 1em !important;
+                    text-align: center;
+                }
+
+                h4 {
+                    font-size: 20px;
+                    text-align: center;
+                    line-height: 1.3em !important;
+                    font-weight: 400;
+                }
+
+                button {
+                    width: 100%;
+                    text-align: center;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+
+            .banner-right-box {
+                padding-top: 50px;
+                background-color: transparent;
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                    object-fit: cover;
+                }
+            }
+        }
+
+    }
+}

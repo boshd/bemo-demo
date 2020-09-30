@@ -1,0 +1,114 @@
+.footer-container {
+    width: 100%;
+    height: 350px;
+    background: #000066;
+    position: relative;
+    color: white;
+    margin-top: 50px;
+
+    .footer-inner {
+        margin: 0;
+        width: 60%;
+        height: 80%;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+
+        width: 60%;
+        height: 80%;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        display: flex;
+        flex-flow: row wrap;
+        // justify-content: space-between;
+        align-items: flex-start;
+        align-content: space-between;
+
+        .footer-left-box {
+            background-color: transparent;
+            flex-basis: 33.3%;
+            height: 80%;
+
+            h1 {
+                font-size: 17.5px;
+            }
+
+            a {
+                font-weight: 400;
+                font-size: 15px;
+
+                &.underline-on-hover:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .footer-center-box {
+            background-color: transparent;
+            flex-basis: 33.3%;
+            height: 80%;
+
+            h1 {
+                font-size: 17.5px;
+            }
+
+            a {
+                font-weight: 400;
+                font-size: 15px;
+
+                &.underline-on-hover:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .footer-right-box {
+            background-color: transparent;
+            flex-basis: 33.3%;
+            height: 80%;
+
+            h1 {
+                font-size: 17.5px;
+                color: white;
+            }
+
+            a {
+                color: white;
+                font-weight: 400;
+                font-size: 15px;
+
+
+                &.instagram:hover {
+                    color: #e95950;
+                }
+                &.facebook:hover {
+                    color: rgb(66, 103, 178);
+                }
+                &.twitter:hover {
+                    color: rgb(56, 161, 243);
+                }
+                &.linkedin:hover {
+                    color: rgb(0, 119, 181);
+                }
+            }
+        }
+
+        .footer-bottom-box {
+            background-color: transparent;
+            height: 20%;
+            width: 100%;
+            h1 {
+                font-size: 15px;
+                font-weight: bold;
+            }
+        }
+    }
+
+
+}
